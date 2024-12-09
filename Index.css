@@ -1117,4 +1117,7 @@ a {
     .keep_step .keep_step_Parapraph{
     font-size: clamp(0.9rem, 1.5vw, 2rem);
     }
+    .foot div p {
+        font-size: clamp(0.7rem, 1.5vw, 3rem);
+    }
 }
