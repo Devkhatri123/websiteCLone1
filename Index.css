@@ -1083,4 +1083,16 @@ a {
     .contentBoxLeftDesc{
         max-width: unset !important;
     }
+    .sliderContent h3{
+        font-size: clamp(1.8rem, 6.5vw, 6rem);
+    }
+    ..sliderContent p{
+        font-size: clamp(1.2rem, 2.5vw, 2rem);
+    }
+    .makeitTopMiddle h2{
+        font-size: clamp(1.5rem, 2.5vw, 4rem);
+    }   
+    ..home_benefit_Section p {
+        font-size: clamp(1.5rem, 5.5vw, 4rem);
+    }
 }
