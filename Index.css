@@ -1123,4 +1123,17 @@ a {
     .footer_bottom .right p{
     font-size: clamp(0.7rem, 1.5vw, 3rem);
     }
+    .news {
+     margin: 0 !important;
+    flex-wrap: wrap;
+    }
+    .news2 h5 {
+     font-size: clamp(0.8rem, 1.5vw, 5rem);
+    }
+      .news1 h5 {
+     font-size: clamp(0.8rem, 1.5vw, 5rem);
+    }
+      .news3 h5 {
+     font-size: clamp(0.8rem, 1.5vw, 5rem);
+    }
 }
