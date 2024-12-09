@@ -1142,4 +1142,7 @@ a {
     .contextContainer h4{
         font-size: clamp(1.5rem, 2.5vw, 4rem);
     }
+.home_benefit_Section p {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
 }
