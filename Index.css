@@ -1114,4 +1114,7 @@ a {
     .keep_step h1{
         font-size: clamp(1.8rem, 1.5vw, 5rem);
     }
+    .keep_step .keep_step_Parapraph{
+    font-size: clamp(0.9rem, 1.5vw, 2rem);
+    }
 }
