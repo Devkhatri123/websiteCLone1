@@ -1108,4 +1108,10 @@ a {
     .help_you .content .help_you_speciality div a span{
         font-size: clamp(1.8rem, 1.5vw, 4rem);
     }
+    .start_connect_content_box h3{
+        font-size: clamp(1.8rem, 1.5vw, 4rem);
+    }
+    .keep_step h1{
+        font-size: clamp(1.8rem, 1.5vw, 5rem);
+    }
 }
