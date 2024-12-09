@@ -1120,4 +1120,7 @@ a {
     .foot div p {
         font-size: clamp(0.7rem, 1.5vw, 3rem);
     }
+    .footer_bottom .right p{
+    font-size: clamp(0.7rem, 1.5vw, 3rem);
+    }
 }
