@@ -1149,15 +1149,15 @@ a {
         flex-wrap: wrap;
     }
     .news1 {
-    max-width: 100%;
-    margin-right: 0px;
+     max-width: 100%;
+    margin: 0 10px;
 }
      .news2 {
     max-width: 100%;
-    margin-right: 0px;
+    margin: 0 10px;
 }
      .news3 {
     max-width: 100%;
-    margin-right: 0px;
+    margin: 0 10px;
 }
 }
