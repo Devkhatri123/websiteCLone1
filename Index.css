@@ -1095,4 +1095,7 @@ a {
     ..home_benefit_Section p {
         font-size: clamp(1.5rem, 5.5vw, 4rem);
     }
+    .footer_lists div{
+        font-size: clamp(0.6rem, 1.5vw, 4rem);
+    }
 }
