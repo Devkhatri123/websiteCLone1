@@ -1136,4 +1136,7 @@ a {
       .news3 h5 {
      font-size: clamp(0.8rem, 1.5vw, 5rem);
     }
+    .footer_lists{
+        padding:0px;
+    }
 }
