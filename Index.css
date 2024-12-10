@@ -222,11 +222,11 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-.SliderSection:hover {
+/* .SliderSection:hover  {
   .icons i {
     display: block;
   }
-}
+} */
 .SliderSection {
   background-image: url("./2024season-sale_banner-home.png");
   height: 670px;
@@ -237,7 +237,8 @@ body {
   transition: 1000ms;
 }
 .icons i {
-  display: none;
+  /* display: ; */
+  visibility: hidden;
   width: 22px;
   height: 20px;
   border-radius: 50%;
@@ -249,6 +250,15 @@ body {
   z-index: 10;
   text-align: center;
   opacity: 1;
+  transition: all 0.4s;
+}
+.SliderSection:hover #rightIcon{
+    visibility: visible;
+    transform: translateX(-20px);
+}
+.SliderSection:hover #leftIcon{
+    visibility: visible;
+    transform: translateX(20px);
 }
 .sliderContent {
   justify-content: center;
@@ -1131,13 +1141,19 @@ a {
     padding: 0;
     margin: 0;
     line-height: 1.8;
+    transition: 0.3s;
   }
  .AccordtionItems ul li a{
     color: white;
   }
   .AccordtionItems{
-    display: none;
+    /* display: none; */
+    height: 0;
+    visibility: hidden;
     transition: all 0.3s;
+  }
+  .arrowAccordtion{
+    transition: 0.2s;
   }
 }
 
