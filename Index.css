@@ -959,229 +959,134 @@ a {
         margin: 0 auto;
     }
 }
-@media screen and (max-width:768px) {
-    .barIcon{
-     display: none;
-    }
-    #stickyNavbarTopLeftHeading{
+}
+@media screen and (max-width: 768px) {
+    .barIcon,
+    #stickyNavbarTopLeftHeading,
+    .stickyNavbarTopLeft,
+    #stickyNavbarTopMiddle,
+    #stickyNavbarTopRight,
+    #headerInnerLeft {
         display: none;
     }
-    #stickyNavbarTop{
+
+    #stickyNavbarTop {
         flex-wrap: wrap;
         row-gap: 15px;
         justify-content: center;
     }
-    .stickyNavbarTopLeft{
-        display: none;
-    }
-    #stickyNavbarTopMiddle{
-        display: none;
-    }
-    #stickyNavbarTopRight{
-        display: none;
-    }
-    .mobileNavbar{
+
+    .mobileNavbar {
         flex-wrap: wrap;
         display: flex !important;
         flex-direction: column;
         width: 100%;
         row-gap: 13px;
     }
-    .mobileNavbar .top{
-       display: flex;
-       align-items: center;
-       width: 100%;
-       justify-content: space-between;
+
+    .mobileNavbar .top {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
     }
-    .bottom{
+
+    .bottom {
         display: flex;
         justify-content: center;
     }
-    .bottom input{
+
+    .bottom input {
         border-radius: 50px;
         border: 1px solid #0073ed;
         height: 40px;
         width: 100%;
         padding-left: 14px;
     }
-    .bottom i{
+
+    .bottom i {
         color: #0073ed;
         position: relative;
         top: 13px;
         right: 34px;
     }
-    .home_benefit_Section_Slider1 {
-        flex: 0 0 97vw;
-        margin-left: 9px;
-        max-width: 100%;
-    }
+
+    .home_benefit_Section_Slider1,
     .home_benefit_Section_Slider2 {
         flex: 0 0 97vw;
         margin-left: 9px;
         max-width: 100%;
     }
-    .home_benefit_Section_Slider2 {
-        flex: 0 0 97vw;
-        margin-left: 9px;
-        max-width: 100%;
-    }
-    .slider_Content{
+
+    .slider_Content {
         width: unset !important;
         max-width: unset !important;
     }
-    #headerInnerLeft{
-        display: none;
+    .enhancing_speed_Img{
+        max-width: unset;
     }
-    #headerInner{
+    #headerInner {
         justify-content: flex-end;
     }
-    .news1 h5{
-        font-size: 15px;
+    .building_intelligentcontentBox{
+        margin: 13px 51px 0 0px;
     }
-    .news2 h5{
-        font-size: 15px;
+    .news h5,
+    .news1 h5,
+    .news2 h5,
+    .news3 h5 {
+        font-size: clamp(0.8rem, 1.5vw, 5rem);
     }
-    .news3 h5{
-        font-size: 15px;
-    }
-    .news1 p{
+
+    .news p {
         font-size: 14px;
     }
-    .news2 p{
-        font-size: 14px;
-    }
-    .news3 p{
-        font-size: 14px;
-    }
-    .contentBoxRight p{
+
+    .contentBoxRight p {
         line-height: 1.5;
-    font-size: 18px;
-    /* white-space: nowrap; */
-    display: -webkit-box;
-    max-width: 200px;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+        font-size: 18px;
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
-    p{
-     display: -webkit-box;
-    /* max-width: 200px; */
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    .contentBox{
+        
     }
-    .building_intelligent{
+    .contentBox,
+    .building_intelligent {
         flex-wrap: wrap;
         margin-left: 0;
+        padding: 28px;
     }
-    .contentBox {
-        flex-wrap: wrap;
-        padding: 0 !important;
-    }
-    .enhancing_speedLeft{
-        margin: 0 21px;
-    }    .contentBoxRight p{
+
+    .contentBoxLeftDesc,
+    .contentBoxRight p {
         max-width: unset !important;
     }
-    .contentBoxLeftDesc{
-        max-width: unset !important;
-    }
-    .sliderContent h3{
+
+    .sliderContent h3 {
         font-size: clamp(1.8rem, 6.5vw, 6rem);
     }
-    ..sliderContent p{
+
+    .sliderContent p {
         font-size: clamp(1.2rem, 2.5vw, 2rem);
     }
-    .makeitTopMiddle h2{
-        font-size: clamp(1.5rem, 2.5vw, 4rem);
-    }   
-    ..home_benefit_Section p {
-        font-size: clamp(1.5rem, 5.5vw, 4rem);
+
+    .home_benefit_Section p {
+        font-size: clamp(1.1rem, 2.5vw, 4rem);
     }
-    .footer_lists div{
-        font-size: clamp(0.6rem, 1.5vw, 4rem);
-    }
-    .content h1{
-        font-size: clamp(1.8rem, 1.5vw, 4rem);
-        margin: 60px 0;
-    }
-    .help_you .content .help_you_speciality div a i{
-    font-size: clamp(1.8rem, 1.5vw, 4rem);
-    }
-    .help_you .content .help_you_speciality div a span{
-        font-size: clamp(1.8rem, 1.5vw, 4rem);
-    }
-    .start_connect_content_box h3{
-        font-size: clamp(1.8rem, 1.5vw, 4rem);
-    }
-    .keep_step h1{
-        font-size: clamp(1.8rem, 1.5vw, 5rem);
-    }
-    .keep_step .keep_step_Parapraph{
-    font-size: clamp(0.9rem, 1.5vw, 2rem);
-    }
-    .foot div p {
-        font-size: clamp(0.7rem, 1.5vw, 3rem);
-    }
-    .footer_bottom .right p{
-    font-size: clamp(0.7rem, 1.5vw, 3rem);
-    }
+
     .news {
-     margin: 0 !important;
-    flex-wrap: wrap;
-    }
-    .news2 h5 {
-     font-size: clamp(0.8rem, 1.5vw, 5rem);
-    }
-      .news1 h5 {
-     font-size: clamp(0.8rem, 1.5vw, 5rem);
-    }
-      .news3 h5 {
-     font-size: clamp(0.8rem, 1.5vw, 5rem);
-    }
-    .footer_lists{
-        padding:0px;
-    }
-    .contextContainer h4{
-        font-size: clamp(1.5rem, 2.5vw, 4rem);
-    }
-.home_benefit_Section p {
-    font-size: clamp(1.1rem, 2.5vw, 4rem);
-}
-    .news{
         flex-wrap: wrap;
+        margin: 0 !important;
     }
-    .news1 {
-     max-width: 100%;
-    margin: 0 10px;
-}
-     .news2 {
-    max-width: 100%;
-    margin: 0 10px;
-}
-     .news3 {
-    max-width: 100%;
-    margin: 0 10px;
-}
-    .building_intelligentLeft{
-        max-width:unset;
+
+    .news1,
+    .news2,
+    .news3 {
+        max-width: unset;
+        margin: 0 10px;
     }
-    .building_intelligentcontentBox{
-        margin: 0 0px 0 16px;
-    }
-    .enhancing_speed_Img{
-         max-width: unset;
-    }
-    .news3{
-            max-width: 330px;
-    }
-     .news2{
-            max-width: 330px;
-    }
-     .news1{
-            max-width: 330px;
-    }
-    .building_intelligentcontentBox{
-        max-width:402px;
-}
 }
