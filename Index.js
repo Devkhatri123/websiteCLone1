@@ -318,3 +318,13 @@ AccordtionItemHeadings.forEach((AccordtionItemHeading)=>{
     }
 });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const together_rslab  = document.querySelector(".together_rslab ");
+    const contextContainer = document.getElementsByClassName("contextContainer")[0]
+  
+    // Listen for the animation to complete
+    together_rslab.addEventListener("animationend", () => {
+      contextContainer.style.display = "flex"; // Show the text container after animation
+    //   contextContainer.classList.add("animationText");
+    });
+  });
