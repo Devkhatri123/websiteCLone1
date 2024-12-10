@@ -1172,4 +1172,13 @@ a {
     .enhancing_speed_Img{
          max-width: unset;
     }
+    .news3{
+            max-width: 330px;
+    }
+     .news2{
+            max-width: 330px;
+    }
+     .news1{
+            max-width: 330px;
+    }
 }
