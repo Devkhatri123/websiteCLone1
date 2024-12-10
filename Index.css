@@ -1110,4 +1110,33 @@ a {
     max-width: unset;
     margin: 0 10px;
   }
+  .list{
+    display: none;
+  }
+  .footerAccordtion{
+    display: block;
+    width: 100%;
+    flex: 1 !important;
+  }
+  .AccordtionItem{
+    border-bottom: 1px solid white; 
+  }
+  .AccordtionTop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .AccordtionItems ul{
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+  }
+ .AccordtionItems ul li a{
+    color: white;
+  }
+  .AccordtionItems{
+    display: none;
+    transition: all 0.3s;
+  }
 }
