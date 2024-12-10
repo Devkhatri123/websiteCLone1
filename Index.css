@@ -944,6 +944,8 @@ a {
     #stickyNavbarTopRight i{
         margin-right: 19px;
     }
+    .building_intelligentLeft {
+        max-width: 505px;
     #stickyNavbarTop{
         padding: 10px 9px 12px 9px;
     }
