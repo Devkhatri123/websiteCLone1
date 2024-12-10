@@ -184,3 +184,36 @@ window.addEventListener("scroll",()=>{
     }
   }
 })
+// const images = document.querySelectorAll(".img");
+// const makeit = document.getElementsByClassName("makeit")[0];
+// let move = 1;
+// let width = makeit.offsetWidth;
+
+// document.addEventListener("scroll", () => {
+//     const sectionTop = makeit.offsetTop;
+//     const sectionBottom = sectionTop + makeit.offsetHeight;
+//     width = makeit.offsetWidth/4;
+
+//         if (window.scrollY > sectionTop && window.scrollY < sectionBottom) {
+//             // Move images towards each other
+//             images[2].style.transform = `translate3d(${width}%, 0, 0)`;
+//         }
+//          else {
+//             // Move images away from each other
+//             // move--;
+//             images[2].style.transform = `translate3d(${width/2}%, 0, 0)`;
+//         }
+// });
+const AccordtionItemHeadings = document.querySelectorAll(".AccordtionTop");
+AccordtionItemHeadings.forEach((AccordtionItemHeading)=>{
+    AccordtionItemHeading.addEventListener("click",()=>{
+        console.log(AccordtionItemHeadings)
+    const dataId = AccordtionItemHeading.dataset.id;
+    if(dataId == "aboutus"){
+       const Items= document.getElementsByClassName(dataId)[0];
+       console.log(Items)
+       if(Items.style.display  === 'block') Items.style.display = "none";
+       else Items.style.display = "block"
+    }
+});
+});
