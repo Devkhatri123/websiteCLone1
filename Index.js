@@ -205,15 +205,116 @@ window.addEventListener("scroll",()=>{
 //         }
 // });
 const AccordtionItemHeadings = document.querySelectorAll(".AccordtionTop");
+const AccordtionUl = document.getElementsByClassName("AccordtionUl")[0];
 AccordtionItemHeadings.forEach((AccordtionItemHeading)=>{
     AccordtionItemHeading.addEventListener("click",()=>{
-        console.log(AccordtionItemHeadings)
+        document.body.style.overflow
     const dataId = AccordtionItemHeading.dataset.id;
     if(dataId == "aboutus"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[0];
        const Items= document.getElementsByClassName(dataId)[0];
-       console.log(Items)
-       if(Items.style.display  === 'block') Items.style.display = "none";
-       else Items.style.display = "block"
+       if(Items.style.visibility  === 'visible'){
+        Items.style.visibility = "hidden";
+        Items.style.height="0";
+        Items.style.overflow="hidden";
+        AccordtionUl.style.lineHeight = 1.3;
+        AccordtionIcon.style.transform = "rotate(0deg)"
+       }
+       else {
+        Items.style.visibility = "visible";
+        Items.style.height="123px";
+        Items.style.overflow="scroll";
+        AccordtionUl.style.lineHeight = 1.8;
+        AccordtionIcon.style.transform = "rotate(180deg)"
+       }
+    }else if(dataId == "Service"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[1];
+        const Items= document.getElementsByClassName(dataId)[0];
+        if(Items.style.visibility  === 'visible'){
+         Items.style.visibility = "hidden";
+         Items.style.height="0";
+         Items.style.overflow="hidden";
+         AccordtionUl.style.lineHeight = 1.3;
+         AccordtionIcon.style.transform = "rotate(0deg)"
+        }
+        else {
+         Items.style.visibility = "visible";
+         Items.style.height="123px";
+         Items.style.overflow="scroll";
+         AccordtionUl.style.lineHeight = 1.8;
+         AccordtionIcon.style.transform = "rotate(180deg)"
+        }
+    }
+    else if(dataId == "quickhelp"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[2];
+        const Items= document.getElementsByClassName(dataId)[0];
+        if(Items.style.visibility  === 'visible'){
+         Items.style.visibility = "hidden";
+         Items.style.height="0";
+         Items.style.overflow="hidden";
+         AccordtionUl.style.lineHeight = 1.3;
+         AccordtionIcon.style.transform = "rotate(0deg)"
+        }
+        else {
+         Items.style.visibility = "visible";
+         Items.style.height="123px";
+         Items.style.overflow="scroll";
+         AccordtionUl.style.lineHeight = 1.8;
+         AccordtionIcon.style.transform = "rotate(180deg)"
+        }
+    }
+    else if(dataId == "quickhelp"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[3];
+        const Items= document.getElementsByClassName(dataId)[0];
+        if(Items.style.visibility  === 'visible'){
+         Items.style.visibility = "hidden";
+         Items.style.height="0";
+         Items.style.overflow="hidden";
+         AccordtionUl.style.lineHeight = 1.3;
+         AccordtionIcon.style.transform = "rotate(0deg)"
+        }
+        else {
+         Items.style.visibility = "visible";
+         Items.style.height="123px";
+         Items.style.overflow="scroll";
+         AccordtionUl.style.lineHeight = 1.8;
+         AccordtionIcon.style.transform = "rotate(180deg)"
+        }
+    } else if(dataId == "Support"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[4];
+        const Items= document.getElementsByClassName(dataId)[0];
+        if(Items.style.visibility  === 'visible'){
+         Items.style.visibility = "hidden";
+         Items.style.height="0";
+         Items.style.overflow="hidden";
+         AccordtionUl.style.lineHeight = 1.3;
+         AccordtionIcon.style.transform = "rotate(0deg)"
+        }
+        else {
+         Items.style.visibility = "visible";
+         Items.style.height="123px";
+         Items.style.overflow="scroll";
+         AccordtionUl.style.lineHeight = 1.8;
+         AccordtionIcon.style.transform = "rotate(180deg)"
+        }
+    }
+    else if(dataId == "OtherBusiness"){
+        const AccordtionIcon = document.getElementsByClassName("arrowAccordtion")[5];
+        const Items= document.getElementsByClassName(dataId)[0];
+        if(Items.style.visibility  === 'visible'){
+         Items.style.visibility = "hidden";
+         Items.style.height="0";
+         Items.style.overflow="hidden";
+         AccordtionUl.style.lineHeight = 1.3;
+         AccordtionIcon.style.transform = "rotate(0deg)"
+        }
+        else {
+         Items.style.visibility = "visible";
+         Items.style.height="123px";
+         Items.style.overflow="scroll";
+         AccordtionUl.style.lineHeight = 1.8;
+         AccordtionIcon.style.transform = "rotate(180deg)"
+        }
     }
 });
 });
