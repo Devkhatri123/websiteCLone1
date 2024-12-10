@@ -214,19 +214,14 @@ body {
   width: 12%;
 }
 .icons {
-  position: absolute;
-  /*     top: 500px; */
-  height: 50%;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 671px;
 }
-/* .SliderSection:hover  {
-  .icons i {
-    display: block;
-  }
-} */
 .SliderSection {
   background-image: url("./2024season-sale_banner-home.png");
   height: 670px;
@@ -517,26 +512,90 @@ a {
   overflow-x: hidden;
 }
 .together_rslab {
-  background-image: url("./rs_lab.jpg");
-  background-size: cover;
-  transform-origin: bottom;
-  background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-color: #eeeff4;
+    background-image: url(./rs_lab.jpg);
+    background-size: cover;
+    transform-origin: bottom;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeff4;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin: 0 auto;
+}
+@keyframes appear {
+    0%{
+       width: 25%;
+       height: 25vh;
+       opacity: 0.25;
+       transform: scale(0.25);
+    }
+    25%{
+        width: 25%;
+       height: 25vh;
+       opacity: 0.50;
+       transform: scale(0.50);
+    }
+    50%{
+        width: 50%;
+       height: 50vh;
+       opacity: 0.75;
+       transform: scale(0.75);
+    }
+    100%{
+        width: 100%;
+       height: 100vh;
+       opacity: 1;
+       transform: scale(1);
+       .contextContainer{
+        display: flex;
+       }
+    }
 }
 .contextContainer {
+    display: none;
   max-width: 546px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   color: white;
   /* align-items: baseline; */
   height: 100%;
   justify-content: center;
   margin-left: 38px;
+  transform: translateY(100px);
+  /* opacity: 0; */
 }
+.animationText{
+    position: fixed;
+    animation: textAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+/* @keyframes textAnimation {
+    0%{
+        transform: translateY(-25px);
+        opacity: 0.2;
+}
+25%{
+    transform: translateY(0);
+    opacity: 0.25;
+}
+50%{
+    transform: translateY(-25px);
+    opacity: 0.5;
+}
+75%{
+    transform: translateY(-25px);
+    opacity: 0.7;
+}
+100%{
+    transform: translateY(-25px);
+    opacity: 1;
+}
+} */
 .contextContainer p {
   font-size: 12px;
   margin: 0;
@@ -994,6 +1053,7 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+    
   .barIcon,
   #stickyNavbarTopLeftHeading,
   .stickyNavbarTopLeft,
@@ -1089,12 +1149,15 @@ a {
   .building_intelligent {
     flex-wrap: wrap;
     margin-left: 0;
-    padding: 28px;
+    padding: 22px 35px 72px 29px !important;
   }
 
   .contentBoxLeftDesc,
   .contentBoxRight p {
     max-width: unset !important;
+  }
+  .contentBoxRight,.contentBoxLeft{
+    max-width: unset;
   }
 
   .sliderContent h3 {
