@@ -212,7 +212,8 @@ body{
 }
 .icons{
     position: absolute;
-    top: 500px;
+/*     top: 500px; */
+    transform: translateY(50vh);
     display: flex;
     justify-content: space-between;
     width: 100%;
