@@ -1163,4 +1163,7 @@ a {
     max-width: 100%;
     margin: 0 10px;
 }
+    .building_intelligentLeft{
+        max-width:unset;
+    }
 }
