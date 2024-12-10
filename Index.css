@@ -1166,4 +1166,7 @@ a {
     .building_intelligentLeft{
         max-width:unset;
     }
+    .building_intelligentcontentBox{
+        margin: 0 0px 0 16px;
+    }
 }
