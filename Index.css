@@ -1169,4 +1169,7 @@ a {
     .building_intelligentcontentBox{
         margin: 0 0px 0 16px;
     }
+    .enhancing_speed_Img{
+         max-width: unset;
+    }
 }
